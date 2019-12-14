@@ -6,10 +6,12 @@ function nombre(){
         console.log('Rodrigo')
 }
 
-/*
-Tarea
-Event
-Mouse (Cuando el usuario pase el mouse )
-Caja de texto (Rodrigo)
-Click
-*/
+ document.getElementById('user').addEventListener('change', function(event){
+                var user = document.getElementById('user').value
+                //alert(user)
+})
+
+document.getElementById('user-form').addEventListener('submit', function(event){
+        var user = document.getElementById('user').value
+        alert("Bienvenido Usuario " + user)
+})
